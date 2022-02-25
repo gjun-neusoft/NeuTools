@@ -1,0 +1,13 @@
+<template>
+   <div>
+       helloworld
+       neusoft.com
+   </div>
+</template>
+
+<script setup>
+
+</script>
+<style lang='scss' scoped>
+
+</style>
