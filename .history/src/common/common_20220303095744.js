@@ -7,29 +7,24 @@
  * @returns 
  */
 const stringEncryption = (target, start = 0, end = string.length, str = '*') => {
-        let start_str = '',
-            mid_str = '',
-            end_str = '',
-            ret = '';
-        if (target.length < start || target.length < end || target.length < (start + end)) {
-            ret = '字符串长度小于加密长度'
-            return ret
-        }
-        for (let i = 0; i < start; i++) {
-            start_str += str;
-        }
-        for (let i = 0; i < end; i++) {
-            end_str += str;
-        }
-        mid_str = target.slice(start, target.length - end)
-        ret = start_str + mid_str + end_str
+    let start_str = '',
+        mid_str = '',
+        end_str = '',
+        ret = '';
+    if (target.length < start || target.length < end || target.length < (start + end)) {
+        ret = '字符串长度小于加密长度'
         return ret
     }
-    /**
-     * 图片转base64
-     * @param {url} img 
-     * @returns 
-     */
+    for (let i = 0; i < start; i++) {
+        start_str += str;
+    }
+    for (let i = 0; i < end; i++) {
+        end_str += str;
+    }
+    mid_str = target.slice(start, target.length - end)
+    ret = start_str + mid_str + end_str
+    return ret
+}
 const getBase64Image = (img) => {
     let canvas = document.createElement("canvas");
     canvas.width = img.width;
@@ -41,6 +36,5 @@ const getBase64Image = (img) => {
     return dataURL;
 }
 export {
-    stringEncryption,
-    getBase64Image
+    stringEncryption
 }

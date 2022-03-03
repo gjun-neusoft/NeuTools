@@ -41,6 +41,5 @@ const getBase64Image = (img) => {
     return dataURL;
 }
 export {
-    stringEncryption,
-    getBase64Image
+    stringEncryption
 }

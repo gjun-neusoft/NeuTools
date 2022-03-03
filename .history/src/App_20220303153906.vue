@@ -23,7 +23,7 @@
   let menu_data = ref([
       {'index': '/string','name': '字符串脱敏', 'icon': 'el-icon-menu'},
       {'index': '/number','name': '数值', 'icon': 'el-icon-menu'},
-      {'index': '/imgToBase64','name': 'Img转Base64', 'icon': 'el-icon-menu'}
+      {'index': '/imgToBase64','name': 'img对象转Base64', 'icon': 'el-icon-menu'}
 
   ])
   let active_index = ref('2')

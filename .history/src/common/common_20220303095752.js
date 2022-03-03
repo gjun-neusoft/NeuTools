@@ -26,7 +26,7 @@ const stringEncryption = (target, start = 0, end = string.length, str = '*') => 
         return ret
     }
     /**
-     * 图片转base64
+     * 
      * @param {url} img 
      * @returns 
      */
@@ -41,6 +41,5 @@ const getBase64Image = (img) => {
     return dataURL;
 }
 export {
-    stringEncryption,
-    getBase64Image
+    stringEncryption
 }
